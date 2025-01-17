@@ -511,6 +511,7 @@ p {
     .s-skills { height: auto; }
     .img-1080 { width: 300px; }
     .img-1920 { width: 300px; }
+    h1 { font-size: 32px; }
 }
 
 @media only screen and (min-width: 576px) {
@@ -520,6 +521,7 @@ p {
     .s-skills { height: auto; }
     .img-1080 { width: 198px; }
     .img-1920 { width: 198px; }
+    h1 { font-size: 48px; }
 }
 
 @media only screen and (min-width: 768px) {
@@ -529,6 +531,7 @@ p {
     .s-skills { height: auto; }
     .img-1080 { width: 248px; }
     .img-1920 { width: 248px; }
+    h1 { font-size: 48px; }
 }
 
 @media only screen and (min-width: 992px) {
@@ -538,6 +541,7 @@ p {
     .s-skills { height: 262px; }
     .img-1080 { width: 263px; }
     .img-1920 { width: 263px; }
+    h1 { font-size: 64px; }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -547,6 +551,7 @@ p {
     .s-skills { height: 262px; }
     .img-1080 { width: 348px; }
     .img-1920 { width: 348px; }
+    h1 { font-size: 64px; }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -556,4 +561,5 @@ p {
     .s-skills { height: 262px; }
     .img-1080 { width: 304px; }
     .img-1920 { width: 458px; }
+    h1 { font-size: 64px; }
 }
