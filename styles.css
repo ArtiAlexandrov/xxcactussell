@@ -511,6 +511,7 @@ p {
     .s-skills { height: auto; }
     .img-1080 { width: 148px; }
     .img-1920 { width: 300px; }
+    .workplace { width: 300px; }
     h1 { font-size: 48px; }
 }
 
@@ -521,6 +522,7 @@ p {
     .s-skills { height: auto; }
     .img-1080 { width: 198px; }
     .img-1920 { width: 198px; }
+    .workplace { width: 400px; }
     h1 { font-size: 48px; }
 }
 
