@@ -11,6 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">QR-визитка</h2>
+                <button class="close-button" id="closeButton">&times;</button>
+            </div>
+            <div class="modal-content">
+                <object class="qr" data="src/qr_L.svg"></object>
+                <p class="p-modal">Наведите камеру смартфона, чтобы сохранить мой контакт в телефонную книгу</p>
+            </div>
+        </div>
+    </div>
     <div id="fullscreen" class="fullscreen">
         <img src="" alt="Полноразмерное изображение">
     </div>
@@ -34,9 +46,29 @@
             <h3>Портфолио</h3>
         </a>
     </div>
+    <div>
+        <div class="port dimmer"></div>
+        <img class="port port-ph" src="src/port.png">
+        <div class="arrow-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M12 3l0 17.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M12 21l7 -7M12 21l-7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/></path></g></svg>
+        </div>
+    </div>
     <div class="main">
         <div class="block info" id="info">
-            <div class="filler" style="height: 500px; width: 100px;"></div>
+            <div class="skills footer-sk skills-hor">
+                <a class="s-skill-item link skill-hor" href="https://t.me/xxcactussell">
+                    <div class="icon-hor"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 48 48"><path fill="currentColor" d="M41.42 7.309s3.885-1.515 3.56 2.164c-.107 1.515-1.078 6.818-1.834 12.553l-2.59 16.99s-.216 2.489-2.159 2.922c-1.942.432-4.856-1.515-5.396-1.948c-.432-.325-8.094-5.195-10.792-7.575c-.756-.65-1.62-1.948.108-3.463L33.649 18.13c1.295-1.3 2.59-4.33-2.806-.65l-15.11 10.28s-1.727 1.083-4.964.109l-7.016-2.165s-2.59-1.623 1.835-3.246c10.793-5.086 24.068-10.28 35.831-15.15"/></svg></div>
+                </a>
+                <a class="s-skill-item link skill-hor" href="https://vk.com/xxcactussell">
+                    <div class="icon-hor"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M23.45 5.948c.166-.546 0-.948-.795-.948H20.03c-.668 0-.976.347-1.143.73c0 0-1.335 3.196-3.226 5.272c-.612.602-.89.793-1.224.793c-.167 0-.418-.191-.418-.738V5.948c0-.656-.184-.948-.74-.948H9.151c-.417 0-.668.304-.668.593c0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984c-.89 0-3.055-3.211-4.34-6.885C4.45 5.288 4.198 5 3.527 5H.9c-.75 0-.9.347-.9.73c0 .682.89 4.07 4.145 8.551C6.315 17.341 9.37 19 12.153 19c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884c.39 0 1.057.192 2.615 1.667C19.11 18.216 19.403 19 20.405 19h2.625c.75 0 1.126-.368.91-1.096c-.238-.724-1.088-1.775-2.215-3.022c-.612-.71-1.53-1.475-1.809-1.858c-.389-.491-.278-.71 0-1.147c0 0 3.2-4.426 3.533-5.929" clip-rule="evenodd"/></svg></div>
+                </a>
+                <a class="s-skill-item link skill-hor" href="https://www.reddit.com/user/xxcactussell/">
+                    <div class="icon-hor"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"><path fill="currentColor" d="M10.75 13.04c0-.57-.47-1.04-1.04-1.04s-1.04.47-1.04 1.04a1.04 1.04 0 1 0 2.08 0m3.34 2.37c-.45.45-1.41.61-2.09.61s-1.64-.16-2.09-.61a.26.26 0 0 0-.38 0a.26.26 0 0 0 0 .38c.71.71 2.07.77 2.47.77s1.76-.06 2.47-.77a.26.26 0 0 0 0-.38c-.1-.1-.27-.1-.38 0m.2-3.41c-.57 0-1.04.47-1.04 1.04s.47 1.04 1.04 1.04s1.04-.47 1.04-1.04S14.87 12 14.29 12"/><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m5.8 11.33c.02.14.03.29.03.44c0 2.24-2.61 4.06-5.83 4.06s-5.83-1.82-5.83-4.06c0-.15.01-.3.03-.44c-.51-.23-.86-.74-.86-1.33a1.455 1.455 0 0 1 2.47-1.05c1.01-.73 2.41-1.19 3.96-1.24l.74-3.49c.01-.07.05-.13.11-.16c.06-.04.13-.05.2-.04l2.42.52a1.04 1.04 0 1 1 .93 1.5c-.56 0-1.01-.44-1.04-.99l-2.17-.46l-.66 3.12c1.53.05 2.9.52 3.9 1.24a1.455 1.455 0 1 1 1.6 2.38"/></svg></div>
+                </a>
+                <a class="s-skill-item link skill-hor" href="https://www.youtube.com/@xxcactussell">
+                    <div class="icon-hor"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"><path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"/></svg></div>
+                </a>
+            </div>
             <h1 class="name">Артём Батинькин</h1>
             <div class="subname">
                 <div class="subname-el">
@@ -470,6 +502,12 @@
                 <video class="img-1080" controls>
                     <source src="src/4.mp4">
                 </video>
+                <video class="img-1080" controls>
+                    <source src="src/5.mp4">
+                </video>
+                <video class="img-1080" controls>
+                    <source src="src/6.mp4">
+                </video>
             </div>
         </div>
     </div>
@@ -478,6 +516,10 @@
     <div class="footer">
         <div class="skills footer-sk">
             <h4>Артем Батинькин</h4>
+            <div class="s-skill-item button-primary">
+                <div class="skill-icon icon-button-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M8 21H4a1 1 0 0 1-1-1v-4a1 1 0 0 0-2 0v4a3 3 0 0 0 3 3h4a1 1 0 0 0 0-2m14-6a1 1 0 0 0-1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 0 0 2h4a3 3 0 0 0 3-3v-4a1 1 0 0 0-1-1M20 1h-4a1 1 0 0 0 0 2h4a1 1 0 0 1 1 1v4a1 1 0 0 0 2 0V4a3 3 0 0 0-3-3M2 9a1 1 0 0 0 1-1V4a1 1 0 0 1 1-1h4a1 1 0 0 0 0-2H4a3 3 0 0 0-3 3v4a1 1 0 0 0 1 1m8-4H6a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1M9 9H7V7h2Zm5 2h4a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1m1-4h2v2h-2Zm-5 6H6a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1m-1 4H7v-2h2Zm5-1a1 1 0 0 0 1-1a1 1 0 0 0 0-2h-1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1m4-3a1 1 0 0 0-1 1v3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1m-4 4a1 1 0 1 0 1 1a1 1 0 0 0-1-1"/></svg></div>
+                <h5 class="skill-name skill-text icon-text-primary">Сохранить контакт</h5>
+            </div>
             <h5 class="skill-name skill-text"> </h5>
             <h5 class="skill-name skill-text">. . .</h5>
             <h5 class="skill-name skill-text"> </h5>
@@ -554,5 +596,41 @@
     fullscreenDiv.addEventListener('click', () => {
         fullscreenDiv.classList.remove('active');
     });
+</script>
+<script>
+    window.onload = function() {
+        var links = document.getElementsByTagName("a");
+        for(var i = 0; i < links.length; i++) {
+            if (links[i].getAttribute("href")[0] != "#") {
+                links[i].setAttribute("target", "_blank");
+            }
+        }
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var modalOverlay = document.getElementById("modalOverlay");
+    var closeButton = document.getElementById("closeButton");
+    var primaryButton = document.querySelector(".button-primary");
+
+    primaryButton.addEventListener("click", function() {
+        modalOverlay.classList.add("show");
+        setTimeout(() => { modalOverlay.classList.add("show-anim") }, 5);
+    });
+
+    closeButton.addEventListener("click", function() {
+        modalOverlay.classList.remove("show-anim");
+        setTimeout(() => { modalOverlay.classList.remove("show") }, 600);
+    });
+
+    modalOverlay.addEventListener("click", function(event) {
+        if (event.target === modalOverlay) {
+            modalOverlay.classList.remove("show-anim");
+            setTimeout(() => { modalOverlay.classList.remove("show") }, 600);
+        }
+    });
+});
+
+
 </script>
 </html>
