@@ -745,6 +745,7 @@ a {
         right: 48px;
     }
     .project-title { width: 240px; }
+    .port { height: 75vh; }
 }
 
 @media only screen and (min-width: 576px) {
@@ -771,6 +772,7 @@ a {
         right: 48px;
     }
     .project-title { width: 160px; }
+    .port { height: 80vh; }
 }
 
 @media only screen and (min-width: 768px) {
@@ -796,6 +798,7 @@ a {
         right: 48px;
     }
     .project-title { width: 220px; }
+    .port { height: 85vh; }
 }
 
 @media only screen and (min-width: 992px) {
@@ -821,6 +824,7 @@ a {
         right: 64px;
     }
     .project-title { width: 220px; }
+    .port { height: 90vh; }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -871,5 +875,6 @@ a {
         right: 64px;
     }
     .project-title { width: 280px; }
+    .port { height: 100vh; }
 }
 
