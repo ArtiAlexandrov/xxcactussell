@@ -662,12 +662,25 @@ p {
 
 .modal-content {
     margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .p-modal {
     color: var(--on-surface);
     text-align: center;
     font-size: 12px;
+    max-width: 280px;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--primary-container);
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 576px) {
