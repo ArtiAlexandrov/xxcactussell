@@ -409,19 +409,28 @@ p {
     justify-content: center;
     text-decoration: none;
     color: var(--surface);
-    background-color: var(--on-surface);
     text-align: center;
 }
 
 .workplace-logo {
     display: flex;
     min-height: 120px;
+    background-color: var(--on-surface);
+    border-radius: 16px;
+    margin-bottom: 16px;
 }
 
 .workplace-img {
     width: 180px;
-    margin-bottom: auto;
-    margin-top: auto;
+    margin: auto;
+}
+
+.workplace-name {
+    color: var(--on-background);
+}
+
+.workplace-date {
+    color: var(--on-background);
 }
 
 .fullscreen {
@@ -728,7 +737,6 @@ a {
     .s-skills { height: auto; }
     .img-1080 { width: 148px; }
     .img-1920 { width: 300px; }
-    .workplace { width: 300px; }
     h1 { font-size: 48px; }
     .modal {
         width: 100%;
@@ -746,6 +754,7 @@ a {
     }
     .project-title { width: 240px; }
     .port { height: 75vh; }
+    .wp-s { width: 300px; }
 }
 
 @media only screen and (min-width: 576px) {
@@ -755,7 +764,6 @@ a {
     .s-skills { height: auto; }
     .img-1080 { width: 198px; }
     .img-1920 { width: 198px; }
-    .workplace { width: 400px; }
     h1 { font-size: 48px; }
     .modal {
         width: 100%;
@@ -773,6 +781,7 @@ a {
     }
     .project-title { width: 160px; }
     .port { height: 80vh; }
+    .wp-s { width: 400px; }
 }
 
 @media only screen and (min-width: 768px) {
@@ -799,6 +808,7 @@ a {
     }
     .project-title { width: 220px; }
     .port { height: 85vh; }
+    .wp-s { width: 248px; }
 }
 
 @media only screen and (min-width: 992px) {
@@ -825,6 +835,7 @@ a {
     }
     .project-title { width: 220px; }
     .port { height: 90vh; }
+    .wp-s { width: 263px; }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -850,6 +861,7 @@ a {
         right: 64px;
     }
     .project-title { width: 280px; }
+    .wp-s { width: 348px; }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -876,5 +888,6 @@ a {
     }
     .project-title { width: 280px; }
     .port { height: 100vh; }
+    .wp-s { width: 304px; }
 }
 
