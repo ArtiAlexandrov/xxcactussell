@@ -113,7 +113,15 @@ body {
     align-items: flex-end;
 }
 
+.frog {
+    width: 20px;
+    position: absolute;
+    top: -20px;
+}
+
 .nav-bar-el {
+    display: flex;
+    gap: 8px;
     color: var(--on-background);
     padding: 4px 16px;
     border-radius: 16px;
