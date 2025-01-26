@@ -1,9 +1,0 @@
-{
-    "server": "91.228.153.101",
-    "server_port": 38180,
-    "local_port": 1080,
-    "password": "zd1f4VoXP4IVjhLgb15XiS",
-    "method": "chacha20-ietf-poly1305",
-    "remarks": "Outline Server",
-    "prefix": "%16%03%01%00%C2%A8%01%01"
-}
