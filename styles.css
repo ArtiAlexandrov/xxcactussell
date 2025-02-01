@@ -468,6 +468,7 @@ p {
 .img-1920 {
     width: 100%;
     cursor: pointer;
+    aspect-ratio: 16 / 9;
 }
 
 .img-1080 {
@@ -728,6 +729,12 @@ a {
     color: var(--on-primary-container);
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.title-portfolio {
+    width: 100%;
+    color: var(--on-background);
+    margin-top: 24px;
 }
 
 @media only screen and (max-width: 576px) {
