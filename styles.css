@@ -104,13 +104,15 @@ body {
 .nav-bar {
     position: fixed;
     display: flex;
-    left: 92px;
-    top: 0;
-    height: 100vh;
+    left: 0px;
     gap: 4px;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-end;
+    padding: 12px;
+    border-radius: 0px 24px 24px 0px;
+    background: var(--surface-container);
+    height: auto;
+    top: calc(50% - 124px);
 }
 
 .frog {
@@ -127,18 +129,34 @@ body {
     border-radius: 16px;
     cursor: pointer;
     text-decoration: none;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--surface-container-low);
 }
 
 .active-nbe {
-    outline: 2px solid var(--primary-container);
-    animation: outlineRotate 3s linear;
+    background: var(--primary-container);
+    color: var(--on-primary);
+    transition: all 0.6s ease;
+}
+
+.frog-summon.active-nbe {
+    background: var(--surface-variant);
+    color: var(--on-surface-variant)
 }
 
 .block {
-    /*
     background-color: var(--surface-container-low);
     padding: 24px;
-    border-radius: 36px; */
+    border-radius: 36px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.block.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .info {
@@ -146,6 +164,26 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+}
+
+.header {
+    position: fixed;
+    top: -100px;
+    width: calc(100% - 48px);
+    background: var(--surface-container);
+    z-index: 1;
+    left: 12px;
+    padding: 12px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    transition: top 0.5s ease-out;
+}
+
+.header.visible {
+    top: 12px;
 }
 
 .subname {
@@ -208,6 +246,16 @@ h4 {
     color: var(--primary);
     padding: 0;
     margin: 0 0 12px 0;
+}
+
+h6 {
+    font-family: "Geologica", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--primary);
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 h5 {
@@ -463,16 +511,19 @@ p {
 .img-banner {
     width: 100%;
     cursor: pointer;
+    border-radius: 24px;
 }
 
 .img-1920 {
     width: 100%;
     cursor: pointer;
     aspect-ratio: 16 / 9;
+    border-radius: 24px;
 }
 
 .img-1080 {
     cursor: pointer;
+    border-radius: 24px;
 }
 
 .img-grid {
@@ -522,7 +573,7 @@ p {
 }
 
 .nav-bar-el:hover {
-    background-color: rgba(0, 0, 0, 0);  
+    outline: var(--primary-container) solid 2px;  
 }
 
 .qr {
@@ -703,7 +754,6 @@ a {
 
 .project {
     height: 260px;
-    border-radius: 16px;
     background-size: cover;
     background-position: center;
     text-decoration: none;
@@ -713,7 +763,7 @@ a {
     content: '';
     display: flex;
     position: relative;
-    border-radius: 16px;
+    border-radius: 24px;
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgb(23 19 11 / 0%) 50%, var(--primary-container) 100%);
@@ -738,7 +788,7 @@ a {
 }
 
 @media only screen and (max-width: 576px) {
-    .main { width: 300px; }
+    .main { width: 348px; }
     .nav-bar { display: none; }
     .skill-item { width: 272px; }
     .s-skills { height: auto; }
@@ -762,10 +812,11 @@ a {
     .project-title { width: 240px; }
     .port { height: 75vh; }
     .wp-s { width: 300px; }
+    .header-icon { display: none; }
 }
 
 @media only screen and (min-width: 576px) {
-    .main { width: 400px; }
+    .main { width: 448px; }
     .nav-bar { display: none; }
     .skill-item { width: 372px; }
     .s-skills { height: auto; }
@@ -789,10 +840,11 @@ a {
     .project-title { width: 160px; }
     .port { height: 80vh; }
     .wp-s { width: 400px; }
+    .header-icon { display: none; }
 }
 
 @media only screen and (min-width: 768px) {
-    .main { width: 500px; }
+    .main { width: 548px; }
     .nav-bar { display: none; }
     .skill-item { width: 472px; }
     .s-skills { height: auto; }
@@ -816,10 +868,11 @@ a {
     .project-title { width: 220px; }
     .port { height: 85vh; }
     .wp-s { width: 248px; }
+    .header-icon { display: none; }
 }
 
 @media only screen and (min-width: 992px) {
-    .main { width: 530px; }
+    .main { width: 578px; }
     .nav-bar { display: flex; }
     .skill-item { width: 235px; }
     .s-skills { height: 262px; }
@@ -843,10 +896,11 @@ a {
     .project-title { width: 220px; }
     .port { height: 90vh; }
     .wp-s { width: 263px; }
+    .header-icon { display: flex; }
 }
 
 @media only screen and (min-width: 1200px) {
-    .main { width: 700px; }
+    .main { width: 748px; }
     .nav-bar { display: flex; }
     .skill-item { width: 320px; }
     .s-skills { height: 262px; }
@@ -869,10 +923,11 @@ a {
     }
     .project-title { width: 280px; }
     .wp-s { width: 348px; }
+    .header-icon { display: flex; }
 }
 
 @media only screen and (min-width: 1400px) {
-    .main { width: 920px; }
+    .main { width: 968px; }
     .nav-bar { display: flex; }
     .skill-item { width: 430px; }
     .s-skills { height: 262px; }
@@ -896,5 +951,6 @@ a {
     .project-title { width: 280px; }
     .port { height: 100vh; }
     .wp-s { width: 304px; }
+    .header-icon { display: flex; }
 }
 
