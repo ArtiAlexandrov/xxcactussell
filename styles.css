@@ -536,6 +536,12 @@ p {
     margin-top: 4px;
 }
 
+.img-grid-less {
+    height: 720px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
 .subname-el:hover, .skill-item:hover {
     -webkit-box-shadow: 0px 0px 42px 24px var(--primary-container-light);
     -moz-box-shadow: 0px 0px 42px 24px var(--primary-container-light);
@@ -785,6 +791,42 @@ a {
     width: 100%;
     color: var(--on-background);
     margin-top: 24px;
+}
+
+.btn-placeholder {
+    display: flex;
+    justify-content: center;
+}
+
+.show-more {
+    display: none;
+}
+
+.show-more-btn {
+    padding: 0 20px;
+    background-color: var(--primary-container);
+    font-family: 'Geologica';
+    font-weight: 800;
+    color: var(--on-primary-container);
+    border: none;
+    cursor: pointer;
+}
+
+.show-more-btn:hover {
+    background-color: var(--surface);
+    color: var(--on-surface);
+}
+
+.shadow {
+    width: 100%;
+    height: 42px;
+    position: relative;
+    bottom: 42px;
+    background: linear-gradient(180deg, rgb(31 27 19 / 0%) 0%, #1f1b13 100%);
+}
+
+.shadow.expanded {
+    display: none;
 }
 
 @media only screen and (max-width: 576px) {

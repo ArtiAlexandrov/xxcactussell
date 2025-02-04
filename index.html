@@ -495,9 +495,11 @@
             <h4>Портфолио</h4>
             <div class="img-grid">
                 <img class="img-banner thumbnail" src="src/Баннер_Русский свет_1920_Батинькин А.А._28.10.24.jpg">
-                <div class="title-portfolio">
-                    <h2>Примеры 2D-графики для социальных сетей</h2>
-                </div>
+            </div>
+            <div class="title-portfolio">
+                <h2>Примеры 2D-графики для социальных сетей</h2>
+            </div>
+            <div class="img-grid img-grid-less">
                 <img class="img-1080 thumbnail" src="src/1080p/1.jpg">
                 <img class="img-1080 thumbnail" src="src/1080p/2.jpg">
                 <img class="img-1080 thumbnail" src="src/1080p/3.jpg">
@@ -528,18 +530,26 @@
                 <img class="img-1080 thumbnail" src="src/1080p/28.jpg">
                 <img class="img-1080 thumbnail" src="src/1080p/30.png">
                 <img class="img-1080 thumbnail" src="src/1080p/31.jpg">
-                <div class="title-portfolio">
-                    <h2>Примеры 3D-визуализации</h2>
-                </div>
+            </div>
+            <div class="shadow"></div>
+            <div class="btn-placeholder">
+                <button class="show-more-btn s-skill-item" onclick="toggleImages()">Показать все</button>
+            </div>
+            <div class="title-portfolio">
+                <h2>Примеры 3D-визуализации</h2>
+            </div>
+            <div class="img-grid">
                 <img class="img-1920 thumbnail" src="src/1920p/1.png">
                 <img class="img-1920 thumbnail" src="src/1920p/2.png">
                 <img class="img-1920 thumbnail" src="src/1920p/3.png">
                 <img class="img-1920 thumbnail" src="src/1920p/4.png">
                 <img class="img-1920 thumbnail" src="src/1920p/5.png">
                 <img class="img-1920 thumbnail" src="src/1920p/6.png">
-                <div class="title-portfolio">
-                    <h2>Видео-Reels</h2>
-                </div>
+            </div>
+            <div class="title-portfolio">
+                <h2>Видео-Reels</h2>
+            </div>
+            <div class="img-grid">
                 <video class="img-1080" controls>
                     <source src="src/1.mp4">
                 </video>
@@ -552,9 +562,11 @@
                 <video class="img-1080" controls>
                     <source src="src/4.mp4">
                 </video>
-                <div class="title-portfolio">
-                    <h2>Видео 3D-визуализация</h2>
-                </div>
+            </div>
+            <div class="title-portfolio">
+                <h2>Видео 3D-визуализация</h2>
+            </div>
+            <div class="img-grid">
                 <video class="img-1080" controls>
                     <source src="src/5.mp4">
                 </video>
@@ -795,5 +807,23 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(infoBlock);
 });
 
+</script>
+<script>
+    function toggleImages() {
+        const imgGrid = document.querySelector('.img-grid-less');
+        const dimmer = document.querySelector('.shadow');
+        const showMoreBtn = document.querySelector('.show-more-btn');
+        if (imgGrid.classList.contains('expanded')) {
+            dimmer.classList.remove('expanded');
+            imgGrid.classList.remove('expanded');
+            imgGrid.style.height = '720px';
+            showMoreBtn.textContent = 'Показать все';
+        } else {
+            imgGrid.classList.add('expanded');
+            dimmer.classList.add('expanded');
+            imgGrid.style.height = 'auto';
+            showMoreBtn.textContent = 'Скрыть';
+        }
+    }
 </script>
 </html>
